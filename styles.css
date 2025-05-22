@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+ 
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+ 
+    h1, h2 {
+      color: #4a90e2;
+    }
+ 
+    p {
+      line-height: 1.6;
+    }
+ 
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      color: #555;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website!</h1>
+  </header>
+ 
+  <main>
+    <h2>About Me</h2>
+    <p>Hello! My name is [Your Name]. I’m a web enthusiast learning how to build websites.</p>
+    
+    <h2>Hobbies</h2>
+    <p>I enjoy [your hobbies here], coding, and learning new technologies.</p>
+ 
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:you@example.com">you@example.com</a></p>
+  </main>
+ 
+  <footer>
+    &copy; 2025 [Your Name]
+  </footer>
+</body>
+</html>
+ 
