@@ -7,40 +7,59 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- 
+
   <header>
-    <h1>Welcome to My Website!</h1>
-    <p>Exploring web development, one line at a time.</p>
+    <div class="logo">Duncan Go</div>
+    <button id="menu-toggle">&#9776;</button>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
- 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
- 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! My name is <strong>Duncan Dunn Shawty Go</strong>. I'm passionate about technology, design, and the web. I'm currently learning HTML, CSS, and JavaScript to build engaging and responsive websites.</p>
-    </section>
- 
-    <section id="hobbies">
-      <h2>Hobbies</h2>
-      <p>When I'm not coding, I enjoy photography, Gaming, reading sci-fi novels, and experimenting with digital art and UI design.</p>
-    </section>
- 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me at: <a href="mailto:duncango03@gmail.com">duncango03@gmail.com</a></p>
-    </section>
-  </main>
- 
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1><span>Duncan Dunn Shawty Go</span></h1>
+      <p class="typing-text"><span></span></p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="home-img">
+      <img src="https://via.placeholder.com/300" alt="Duncan's Photo" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>Duncan Dunn Shawty Go</strong>. I'm passionate about technology, design, and the web. I'm currently learning HTML, CSS, and JavaScript to build engaging and responsive websites.</p>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <p>When I'm not coding, I enjoy photography, gaming, reading sci-fi novels, and experimenting with digital art and UI design.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me at: <a href="mailto:duncango03@gmail.com">duncango03@gmail.com</a></p>
+  </section>
+
   <footer>
-    &copy; 2025 Duncan Go — All rights reserved.
+    <p>&copy; 2025 Duncan Go — All rights reserved.</p>
   </footer>
- 
+
+  <script>
+    // Mobile nav toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
+
  
