@@ -1,6 +1,4 @@
-/* ===========================
-   1. IMPORTS & GLOBAL STYLES
-   =========================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
@@ -35,9 +33,6 @@ body {
   transition: filter 300ms ease-in-out;
 }
 
-/* ==================
-   2. HEADER & NAVBAR
-   ================== */
 
 .header {
   position: fixed;
@@ -92,9 +87,6 @@ body {
   cursor: pointer;
 }
 
-/* ================
-   3. RESPONSIVENESS
-   ================ */
 
 @media (max-width: 995px) {
   .nav {
@@ -125,9 +117,6 @@ body {
   }
 }
 
-/* ========================
-   4. SECTION: HERO / HOME
-   ======================== */
 
 .section {
   min-height: 100vh;
@@ -178,10 +167,6 @@ body {
   filter: drop-shadow(0 0 20px var(--primary-color));
   box-shadow: 0 0 40px 10px var(--primary-color);
 }
-
-/* ===================
-   5. SOCIAL ICONS & BTN
-   =================== */
 
 .social-icons a {
   display: inline-flex;
