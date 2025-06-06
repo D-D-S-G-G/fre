@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   padding-bottom: 40px;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +19,9 @@ header {
   padding: 20px 40px;
   background-color: #1f1f1f;
   border-bottom: 1px solid #333;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -31,9 +31,17 @@ header {
   font-weight: bold;
 }
 
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 #navbar {
   display: flex;
-  flex-wrap: wrap;
 }
 
 #navbar a {
@@ -48,15 +56,6 @@ header {
   color: #e63946;
 }
 
-#menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 22px;
-}
-
-/* Home Section */
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -119,7 +118,6 @@ header {
   background-color: #c82333;
 }
 
-/* Sections */
 section {
   padding: 40px;
   border-top: 1px solid #333;
@@ -130,6 +128,15 @@ section h2 {
   color: #e63946;
 }
 
+#achievements ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#achievements li {
+  margin-bottom: 8px;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -137,48 +144,40 @@ footer {
   color: #aaa;
 }
 
-/* Responsive Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   #navbar {
     flex-direction: column;
     width: 100%;
     display: none;
-  }
-
-  #navbar a {
-    margin: 10px 0;
-    padding: 10px 20px;
-    width: 100%;
-    border-top: 1px solid #333;
-  }
-
-  #menu-toggle {
-    display: block;
-    margin-left: auto;
+    background-color: #1f1f1f;
+    padding: 10px 0;
   }
 
   #navbar.show {
     display: flex;
   }
 
-  .home {
-    flex-direction: column;
+  #navbar a {
+    margin: 10px 0;
     text-align: center;
   }
 
+  #menu-toggle {
+    display: block;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
   .home-content {
-    padding: 20px 0;
+    text-align: center;
   }
 }
-
-/* Optional JS toggle menu */
-document.getElementById('menu-toggle').addEventListener('click', function() {
-  document.getElementById('navbar').classList.toggle('show');
-});
-
- 
