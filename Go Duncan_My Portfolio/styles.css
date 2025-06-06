@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+}
+
+#navbar a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  color: #e63946;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.home-img {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.home-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.home-content h1 span,
+.typing-text span {
+  color: #e63946;
+}
+
+.typing-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: #e63946;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c82333;
+}
+
+section {
+  padding: 40px;
+  border-top: 1px solid #333;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+#achievements ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#achievements li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #1f1f1f;
+    padding: 10px 0;
+  }
+
+  #navbar.show {
+    display: flex;
+  }
+
+  #navbar a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+}
