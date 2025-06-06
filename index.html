@@ -10,7 +10,7 @@
 <body>
   <header>
     <a href="#" class="logo">Duncan Go</a>
-    <button id="menu-toggle"><i class="fa fa-bars"></i></button>
+    <button id="menu-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
     <nav id="navbar">
       <a href="#" class="active">Home</a>
       <a href="#about">About</a>
@@ -57,10 +57,9 @@
   <section id="achievements">
     <h2>Achievements</h2>
     <ul>
-  
       <li>🎓 Dean's Lister</li>
       <li>🧠 Honor Student</li>
-      <li>🎨 Champion</li>
+      <li>🎨 Champion in Graphic Design Competition</li>
     </ul>
   </section>
 
@@ -73,6 +72,14 @@
     <p>&copy; 2025 Duncan Go — All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
